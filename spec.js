@@ -30,7 +30,7 @@ describe('Protractor Demo App', function () {
     let companyNames = [], companyDetails = [], fullDetails = [];
     await alphabetsList.then(async (totalCompaniesList) => {
       console.log('totalCompaniesList: ' + totalCompaniesList.length);
-      for (let i = 2; i <= 3; i++) {
+      for (let i = 2; i <= 27; i++) {
         if (i != 25 && i != 26) {
           let ele = element(by.css('.browse-head ul li:nth-child(' + i + ') a'));
           await ele.click();
@@ -38,7 +38,6 @@ describe('Protractor Demo App', function () {
           await firstCompanyName.click();
           await companyTitle.getText().then(async (name) => {
             await companyNames.push(name);
-
           });
           await companyDetail.getText().then(async (detail) => {
             companyDetails.push(detail);
