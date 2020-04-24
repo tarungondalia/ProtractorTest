@@ -9,8 +9,7 @@ exports.config = {
     specs: ['spec.js'],
     defaultTimeoutInterval: 2500000,
     multiCapabilities: [{
-      browserName: 'firefox'
-    }, {
+    
       browserName: 'chrome'
     }],
 

@@ -31,6 +31,7 @@
     "protractor-multiple-cucumber-html-reporter-plugin": "^1.8.1",
     "reporter": "^0.1.0",
     "typescript": "^3.8.3",
+    "write-json-file": "^4.3.0",
     "xlsx": "^0.15.6"
   },
   "devDependencies": {

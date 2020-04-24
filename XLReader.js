@@ -1,7 +1,5 @@
 const XLSX = require('xlsx');
 
-
-
 class xlReader{
     read_from_excel(sheetName, filePath){
         var workbook = XLSX.readFile(filePath);
